@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<robot name="teocart" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find teocart_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find teocart_description)/urdf/teocart.trans" />
+<xacro:include filename="$(find teocart_description)/urdf/teocart.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.001179615645610862 0.08343615954994768 0.39870875619661406" rpy="0 0 0"/>
+    <mass value="60.06938994689099"/>
+    <inertia ixx="4.863435" iyy="7.747954" izz="6.321019" ixy="-4.7e-05" iyz="2.7e-05" ixz="0.011747"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_wheel_1">
+  <inertial>
+    <origin xyz="2.7129117138174896e-07 -0.02500005067030059 7.994280071255133e-09" rpy="0 0 0"/>
+    <mass value="10.366820372703833"/>
+    <inertia ixx="0.026511" iyy="0.049057" izz="0.026511" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000262 -0.308434 -0.097624" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000262 -0.308434 -0.097624" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_wheel_1">
+  <inertial>
+    <origin xyz="2.71291167543348e-07 0.02499994932970248 7.994280223910799e-09" rpy="0 0 0"/>
+    <mass value="10.366820372703833"/>
+    <inertia ixx="0.026511" iyy="0.049057" izz="0.026511" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000262 0.141566 -0.097624" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000262 0.141566 -0.097624" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_rod_1">
+  <inertial>
+    <origin xyz="2.7129116947631786e-07 0.2249999493297009 7.99427844755396e-09" rpy="0 0 0"/>
+    <mass value="0.5554849067522354"/>
+    <inertia ixx="0.009503" iyy="0.000259" izz="0.009503" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000262 0.141566 -0.097624" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/wheel_rod_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000262 0.141566 -0.097624" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/wheel_rod_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Lidar_1">
+  <inertial>
+    <origin xyz="-4.31722445655428e-05 -5.067029690275504e-08 0.014555441791437862" rpy="0 0 0"/>
+    <mass value="1.142168118236333"/>
+    <inertia ixx="0.000526" iyy="0.000525" izz="0.000887" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000175 -0.083434 -0.347624" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/Lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000175 -0.083434 -0.347624" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/Lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_1">
+  <inertial>
+    <origin xyz="0.005524691634360479 0.0003917531951274783 0.0018419180403402569" rpy="0 0 0"/>
+    <mass value="0.3185489172419076"/>
+    <inertia ixx="0.000829" iyy="1.4e-05" izz="0.000824" ixy="-1e-06" iyz="-0.0" ixz="2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.352912 -0.079792 -0.200491" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.352912 -0.079792 -0.200491" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://teocart_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="left_motor" type="continuous">
+  <origin xyz="0.0 0.45 0.0" rpy="0 0 0"/>
+  <parent link="wheel_rod_1"/>
+  <child link="left_wheel_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Right_motor" type="continuous">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="wheel_rod_1"/>
+  <child link="right_wheel_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Rigid 10" type="fixed">
+  <origin xyz="0.000262 -0.141566 0.097624" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_rod_1"/>
+</joint>
+
+<joint name="Rigid 12" type="fixed">
+  <origin xyz="0.000175 0.083434 0.347624" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Lidar_1"/>
+</joint>
+
+<joint name="Rigid 13" type="fixed">
+  <origin xyz="0.352912 0.079792 0.200491" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="camera_1"/>
+</joint>
+
+</robot>
