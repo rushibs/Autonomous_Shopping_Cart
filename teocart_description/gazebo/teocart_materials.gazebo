@@ -1,52 +1,34 @@
 <?xml version="1.0" ?>
 <robot name="teocart" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<xacro:property name="body_color" value="Gazebo/Silver" />
+<xacro:property name="body_color" value="Gazebo/DarkGrey" />
+<xacro:property name="wheel_color" value="Gazebo/Black" />
+<xacro:property name="lidar_color" value="Gazebo/LightBlue" />
+<xacro:property name="camera_color" value="Gazebo/Silver" />
 
-<gazebo>
-  <plugin name="control" filename="libgazebo_ros_control.so"/>
-</gazebo>
 <gazebo reference="base_link">
   <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-  <gravity>true</gravity>
+  
 </gazebo>
 
 <gazebo reference="left_wheel_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
+  <material>${wheel_color}</material> 
 </gazebo>
 
 <gazebo reference="right_wheel_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
+  <material>${wheel_color}</material>
 </gazebo>
 
 <gazebo reference="wheel_rod_1">
   <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="Lidar_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
+  <material>${lidar_color}</material>
 </gazebo>
 
 <gazebo reference="camera_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
+  <material>${camera_color}</material>
 </gazebo>
 
 </robot>
