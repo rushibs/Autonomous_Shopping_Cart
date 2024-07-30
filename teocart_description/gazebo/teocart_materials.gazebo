@@ -1,34 +1,60 @@
 <?xml version="1.0" ?>
 <robot name="teocart" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<xacro:property name="body_color" value="Gazebo/DarkGrey" />
+<xacro:property name="body_color" value="Gazebo/Silver" />
 <xacro:property name="wheel_color" value="Gazebo/Black" />
-<xacro:property name="lidar_color" value="Gazebo/LightBlue" />
-<xacro:property name="camera_color" value="Gazebo/Silver" />
+<xacro:property name="camera_color" value="Gazebo/SkyBlue" />
+<xacro:property name="lidar_color" value="Gazebo/Red" />
+<xacro:property name="caster_color" value="Gazebo/DarkGrey" />
 
 <gazebo reference="base_link">
   <material>${body_color}</material>
+ 
+</gazebo>
+
+<gazebo reference="wheel_rod_1">
+  <material>${caster_color}</material>
   
 </gazebo>
 
 <gazebo reference="left_wheel_1">
-  <material>${wheel_color}</material> 
+  <material>${wheel_color}</material>
+  
 </gazebo>
 
 <gazebo reference="right_wheel_1">
   <material>${wheel_color}</material>
-</gazebo>
-
-<gazebo reference="wheel_rod_1">
-  <material>${body_color}</material>
+  
 </gazebo>
 
 <gazebo reference="Lidar_1">
   <material>${lidar_color}</material>
+  
+</gazebo>
+
+<gazebo reference="front_right_caster_wheel_1">
+  <material>${caster_color}</material>
+  
+</gazebo>
+
+<gazebo reference="front_left_caster_wheel_1">
+  <material>${caster_color}</material>
+  
+</gazebo>
+
+<gazebo reference="right_left_caster_wheel_1">
+  <material>${caster_color}</material>
+  
+</gazebo>
+
+<gazebo reference="rear_left_caster_wheel_1">
+  <material>${caster_color}</material>
+  
 </gazebo>
 
 <gazebo reference="camera_1">
   <material>${camera_color}</material>
+  
 </gazebo>
 
 </robot>
