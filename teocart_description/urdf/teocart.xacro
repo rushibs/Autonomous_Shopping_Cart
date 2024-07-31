@@ -20,7 +20,6 @@
     <geometry>
       <mesh filename="package://teocart_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -41,7 +40,6 @@
     <geometry>
       <mesh filename="package://teocart_description/meshes/wheel_rod_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-2.3e-05 -0.226142 -0.098303" rpy="0 0 0"/>
@@ -62,7 +60,6 @@
     <geometry>
       <mesh filename="package://teocart_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-2.3e-05 -0.226142 -0.098303" rpy="0 0 0"/>
@@ -83,7 +80,6 @@
     <geometry>
       <mesh filename="package://teocart_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-2.3e-05 0.223858 -0.098303" rpy="0 0 0"/>
@@ -104,7 +100,6 @@
     <geometry>
       <mesh filename="package://teocart_description/meshes/Lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="6.4e-05 -0.001142 -0.348303" rpy="0 0 0"/>
@@ -125,7 +120,6 @@
     <geometry>
       <mesh filename="package://teocart_description/meshes/front_right_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.251 0.13 -0.243303" rpy="0 0 0"/>
@@ -146,7 +140,6 @@
     <geometry>
       <mesh filename="package://teocart_description/meshes/front_left_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.251 -0.133 -0.243303" rpy="0 0 0"/>
@@ -167,7 +160,6 @@
     <geometry>
       <mesh filename="package://teocart_description/meshes/right_left_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.25 0.13 -0.243303" rpy="0 0 0"/>
@@ -188,7 +180,6 @@
     <geometry>
       <mesh filename="package://teocart_description/meshes/rear_left_caster_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.25 -0.133 -0.243303" rpy="0 0 0"/>
@@ -209,7 +200,6 @@
     <geometry>
       <mesh filename="package://teocart_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.352673 0.0025 -0.20117" rpy="0 0 0"/>

@@ -25,7 +25,7 @@
     <wheelSeparation>0.45</wheelSeparation>
 
     <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
-    <wheelDiameter>0.158</wheelDiameter>
+    <wheelDiameter>0.113</wheelDiameter>
 
     <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
     <wheelAcceleration>1.0</wheelAcceleration>
