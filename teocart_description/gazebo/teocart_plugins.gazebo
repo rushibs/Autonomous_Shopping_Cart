@@ -1,31 +1,27 @@
 <?xml version="1.0" ?>
 <robot name="teocart" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-
 <gazebo>
   <plugin name="control" filename="libgazebo_ros_control.so"/>
 </gazebo>
-
 
 <gazebo>
   <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
 
     <!-- Plugin update rate in Hz -->
-    <!-- <updateRate>${update_rate}</updateRate> -->
-    <updateRate>100</updateRate>
+    <updateRate>${10}</updateRate>
+
     <!-- Name of left joint, defaults to `left_joint` -->
     <leftJoint>left_motor</leftJoint>
 
     <!-- Name of right joint, defaults to `right_joint` -->
     <rightJoint>right_motor</rightJoint>
 
-    <!-- Highlights the below two quantities because it takes those from the urdf by default -->
-
     <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
-    <wheelSeparation>0.45</wheelSeparation>
+    <!-- <wheelSeparation>0.5380</wheelSeparation> -->
 
     <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
-    <wheelDiameter>0.113</wheelDiameter>
+    <!-- <wheelDiameter>0.2410</wheelDiameter> -->
 
     <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
     <wheelAcceleration>1.0</wheelAcceleration>
@@ -57,16 +53,11 @@
     <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
     <publishWheelJointState>true</publishWheelJointState>
 
-    <!-- <rosDebugLevel>DEBUG</rosDebugLevel>
-
-    <tf_prefix>my_robot</tf_prefix>
-
-    <publishOdomTF>true</publishOdomTF> -->
-
-
-<!-- Set to true to swap right and left wheels, defaults to true -->
-<legacyMode>false</legacyMode>
-</plugin>
+    <!-- Set to true to swap right and left wheels, defaults to true -->
+    <legacyMode>false</legacyMode>
+  </plugin>
 </gazebo>
+
+
 
 </robot>
