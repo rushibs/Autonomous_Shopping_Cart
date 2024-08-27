@@ -3,7 +3,9 @@
 
 <xacro:include filename="$(find teocart_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find teocart_description)/urdf/teocart.trans" />
-<xacro:include filename="$(find teocart_description)/urdf/teocart.gazebo" />
+<xacro:include filename="$(find teocart_description)/gazebo/teocart_materials.gazebo" />
+<xacro:include filename="$(find teocart_description)/gazebo/teocart_physics.gazebo" />
+<xacro:include filename="$(find teocart_description)/gazebo/teocart_plugins.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="0.000985373150554124 0.0011444340597345749 0.4127431286024428" rpy="0 0 0"/>
@@ -240,7 +242,7 @@
   <origin xyz="2.3e-05 -0.223858 0.098303" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="right_wheel_1"/>
-  <axis xyz="-0.0 -1.0 0.0"/>
+  <axis xyz="-0.0 1.0 0.0"/>
 </joint>
 
 </robot>
