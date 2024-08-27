@@ -6,8 +6,8 @@
 <xacro:include filename="$(find teocart_description)/urdf/teocart.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin xyz="0.000985373150553865 0.0011444340597344886 0.41274312860244255" rpy="0 0 0"/>
-    <mass value="57.26708608289835"/>
+    <origin xyz="0.000985373150554124 0.0011444340597345749 0.4127431286024428" rpy="0 0 0"/>
+    <mass value="57.26708608289834"/>
     <inertia ixx="4.583669" iyy="7.340401" izz="6.097273" ixy="-4.7e-05" iyz="2.9e-05" ixz="0.012483"/>
   </inertial>
   <visual>
@@ -48,9 +48,9 @@
 
 <link name="front_right_caster_wheel_1">
   <inertial>
-    <origin xyz="3.740591836276508e-09 -8.323758349249033e-12 -0.11635757818376496" rpy="0 0 0"/>
-    <mass value="5.160419362694764"/>
-    <inertia ixx="0.024515" iyy="0.024515" izz="0.002282" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+    <origin xyz="3.740591836276508e-09 -8.323675082522186e-12 -0.11619173194709467" rpy="0 0 0"/>
+    <mass value="5.153050505798358"/>
+    <inertia ixx="0.024413" iyy="0.024413" izz="0.002279" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.251 0.13 -0.243303" rpy="0 0 0"/>
@@ -69,9 +69,9 @@
 
 <link name="front_left_caster_wheel_1">
   <inertial>
-    <origin xyz="3.740592613432625e-09 1.9735255651909256e-09 -0.11635757818376496" rpy="0 0 0"/>
-    <mass value="5.160419362694764"/>
-    <inertia ixx="0.024515" iyy="0.024515" izz="0.002282" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+    <origin xyz="3.740592613432625e-09 1.9735255096797744e-09 -0.11619173194709467" rpy="0 0 0"/>
+    <mass value="5.153050505798358"/>
+    <inertia ixx="0.024413" iyy="0.024413" izz="0.002279" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.251 -0.133 -0.243303" rpy="0 0 0"/>
@@ -90,9 +90,9 @@
 
 <link name="right_left_caster_wheel_1">
   <inertial>
-    <origin xyz="4.058697822273416e-13 -8.323758349249033e-12 -0.11635757818376496" rpy="0 0 0"/>
-    <mass value="5.160419362694764"/>
-    <inertia ixx="0.024515" iyy="0.024515" izz="0.002282" ixy="0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="4.058697822273416e-13 -8.323675082522186e-12 -0.11619173194709467" rpy="0 0 0"/>
+    <mass value="5.153050505798358"/>
+    <inertia ixx="0.024413" iyy="0.024413" izz="0.002279" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="0.25 0.13 -0.243303" rpy="0 0 0"/>
@@ -111,9 +111,9 @@
 
 <link name="rear_left_caster_wheel_1">
   <inertial>
-    <origin xyz="4.066191827689636e-13 1.9735255651909256e-09 -0.11635757818376488" rpy="0 0 0"/>
-    <mass value="5.160419362694764"/>
-    <inertia ixx="0.024515" iyy="0.024515" izz="0.002282" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+    <origin xyz="4.066191827689636e-13 1.9735255096797744e-09 -0.11619173194709462" rpy="0 0 0"/>
+    <mass value="5.153050505798358"/>
+    <inertia ixx="0.024413" iyy="0.024413" izz="0.002279" ixy="-0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="0.25 -0.133 -0.243303" rpy="0 0 0"/>
@@ -132,7 +132,7 @@
 
 <link name="camera_1">
   <inertial>
-    <origin xyz="0.005476548100343703 0.0005884720498845288 0.001825852987195009" rpy="0 0 0"/>
+    <origin xyz="0.005476548100343703 0.0005884720498845492 0.001825852987195009" rpy="0 0 0"/>
     <mass value="0.4400307041952206"/>
     <inertia ixx="0.001023" iyy="3.8e-05" izz="0.001001" ixy="-1e-06" iyz="-0.0" ixz="8e-06"/>
   </inertial>
